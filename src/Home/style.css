@@ -1,6 +1,10 @@
- a.active{
+ .manu a.active{
     border: 2px solid green;
-    border-radius: 10px;
+    border-radius: 6px;
+ }
+ a.active:hover{
+    background-color: rgb(193, 193, 147);
+    transition: .4s;
 }
 
 .manu a{
@@ -13,3 +17,9 @@
 .shadow{
     box-shadow: 1px 1px 10px;
 }
+
+/* .manu a:hover{
+    background: #6ec87a;
+    color: white;
+    transition: .5s;
+} */

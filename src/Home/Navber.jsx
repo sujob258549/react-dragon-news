@@ -1,15 +1,16 @@
 
 import './style.css'
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import profile from '../assets/user.png'
 
 
 
 const Navber = () => {
     const manuber = <>
-        <Link className="text-[18px]" to={"/"}>Home</Link>
-        <Link className="text-[18px]">About</Link>
-        <Link className="text-[18px]" >Career</Link>
+        <NavLink className="text-[18px]" to={"/"}>Home</NavLink>
+        <NavLink to={'/about'} className="text-[18px]">About</NavLink>
+        <NavLink to={'/register'} className="text-[18px]" >Career</NavLink>
+        <NavLink to={'/login'} className="text-[18px]" >Login</NavLink>
 
     </>
     return (
